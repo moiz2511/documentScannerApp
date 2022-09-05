@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "documentScannerApp",
-    "slug": "documentScannerApp",
+    "name": "Yottacom Scanner App",
+    "slug": "Scanner-by-yottacom",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +18,18 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "org.yottacom.scanner-app",
+      "buildNumber":"1.0.0",
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "org.yottacom.scanner_app",
+      "versionCode":3,
+      "permissions":["READ_PHONE_STATE","READ_CONTACTS","WRITE_EXTERNAL_STORAGE","CAMERA","READ_EXTERNAL_STORAGE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
